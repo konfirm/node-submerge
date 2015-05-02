@@ -1,0 +1,23 @@
+{
+  "name": "submerge",
+  "version": "0.0.1",
+  "description": "Recursively merge various objects into a single new object, optionally capable of reflecting changes on the merged object ",
+  "main": "lib/submerge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/konfirm/node-submerge.git"
+  },
+  "keywords": [
+    "merge",
+    "recursive"
+  ],
+  "author": "Rogier Spieker",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/konfirm/node-submerge/issues"
+  },
+  "homepage": "https://github.com/konfirm/node-submerge"
+}
