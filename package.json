@@ -1,6 +1,6 @@
 {
   "name": "submerge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Recursively merge various objects into a single new object, optionally capable of reflecting changes on the merged object ",
   "main": "lib/submerge.js",
   "directories": {
