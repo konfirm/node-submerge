@@ -1,6 +1,8 @@
 [![npm version](https://badge.fury.io/js/submerge.svg)](http://badge.fury.io/js/submerge)
 [![Build Status](https://travis-ci.org/konfirm/node-submerge.svg?branch=master)](https://travis-ci.org/konfirm/node-submerge)
 [![Coverage Status](https://coveralls.io/repos/konfirm/node-submerge/badge.svg?branch=master)](https://coveralls.io/r/konfirm/node-submerge?branch=master)
+[![dependencies](https://david-dm.org/konfirm/node-submerge.svg)](https://david-dm.org/konfirm/node-submerge#info=dependencies)
+[![dev-dependencies](https://david-dm.org/konfirm/node-submerge/dev-status.svg)](https://david-dm.org/konfirm/node-submerge#info=devDependencies)
 [![Codacy Badge](https://www.codacy.com/project/badge/f57067be710047c9baf8a74037cf247b)](https://www.codacy.com/app/rogier/node-submerge)
 
 # node-submerge
