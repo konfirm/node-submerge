@@ -2,7 +2,6 @@
 
 var Code = require('code'),
 	Lab = require('lab'),
-	util = require('util'),
 	submerge = require('../lib/submerge'),
 	lab = exports.lab = Lab.script();
 
@@ -93,7 +92,7 @@ lab.experiment('Events', function() {
 			Code.expect(live.d).to.equal('change');
 
 			done();
-		}, 1000);
+		}, 50);
 	});
 
 	lab.test('Deep merge', function(done) {
