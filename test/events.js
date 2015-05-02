@@ -3,7 +3,7 @@
 var Code = require('code'),
 	Lab = require('lab'),
 	util = require('util'),
-	submerge = require('../../lib/submerge'),
+	submerge = require('../lib/submerge'),
 	lab = exports.lab = Lab.script();
 
 lab.experiment('Events', function() {

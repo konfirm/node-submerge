@@ -1,3 +1,8 @@
+[![npm version](https://badge.fury.io/js/submerge.svg)](http://badge.fury.io/js/submerge)
+[![Build Status](https://travis-ci.org/konfirm/node-submerge.svg?branch=master)](https://travis-ci.org/konfirm/node-submerge)
+[![Coverage Status](https://coveralls.io/repos/konfirm/node-submerge/badge.svg?branch=master)](https://coveralls.io/r/konfirm/node-submerge?branch=master)
+[![Codacy Badge](https://www.codacy.com/project/badge/f57067be710047c9baf8a74037cf247b)](https://www.codacy.com/app/rogier/node-submerge)
+
 # node-submerge
 Recursively merge various objects into a single new object, optionally capable of reflecting changes on the merged object
 
