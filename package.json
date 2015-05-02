@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "Recursively merge various objects into a single new object, optionally capable of reflecting changes on the merged object ",
   "main": "lib/submerge.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/lab -f -t 100 -m 3000",
+    "test-coverage": "./node_modules/.bin/lab -f -r html -m 3000 -o report.html"
   },
   "repository": {
     "type": "git",
@@ -12,12 +16,21 @@
   },
   "keywords": [
     "merge",
-    "recursive"
+    "recursive",
+    "combine"
   ],
   "author": "Rogier Spieker",
   "license": "GPLv2",
   "bugs": {
     "url": "https://github.com/konfirm/node-submerge/issues"
   },
-  "homepage": "https://github.com/konfirm/node-submerge"
+  "homepage": "https://github.com/konfirm/node-submerge",
+  "devDependencies": {
+    "code": "^1.4.0",
+    "coveralls": "^2.11.2",
+    "lab": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
 }
