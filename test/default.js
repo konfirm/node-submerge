@@ -7,6 +7,17 @@ var Code = require('code'),
 
 lab.experiment('Default behaviour', function() {
 
+	lab.test('Skip empty params', function(done) {
+		var defaults = {
+				ok: true
+			},
+			options;
+
+		Code.expect(submerge(options, defaults).ok).to.equal(true);
+
+		done();
+	});
+
 	lab.test('All expected properties', function(done) {
 		var first = {
 				a: 1,
