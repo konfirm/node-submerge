@@ -26,5 +26,25 @@ This creates a merged object which contains all keys/values encountered in all p
 #### `submerge.live(object A, object B, ...)`
 This creates a merged object which contains all keys/values encountered in all provided objects. The merged object is enumerable but will have `[Getter/Setter]` at all keys, any change to existing keys will not only be honered but also persisted in the originating object.
 
+### Events
+When using the `submerge.live` method, you may want to know which variables are being changed, this can be done using the event mechanism (which is only available for `live` merges).
+
+#### `change`
+Live submerged objects have the `change` event, this was designed to work from the object returned by `submerge.live(...)`.
+```js
+var submerge = require('submerge'),
+    live = submerge.live({a:'this is a'}, {b:'this is b'});
+
+live.on('change', function(key, newValue, oldValue) {
+	console.log('live changed key', key, 'new', newValue, 'was', oldValue);
+});
+
+live.a = 'still a, but different';
+
+```
+Do note that as the change handler was designed to be used on the object returned by `submerge.live` the key will actually use the object dot notation for nested keys, e.g. `live.my.object.value` will have the key `'my.object.value'` in the `change`-event.
+
+
+
 ## License
 GPLv2 © [Konfirm](https://konfirm.eu)
