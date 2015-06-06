@@ -45,6 +45,5 @@ live.a = 'still a, but different';
 Do note that as the change handler was designed to be used on the object returned by `submerge.live` the key will actually use the object dot notation for nested keys, e.g. `live.my.object.value` will have the key `'my.object.value'` in the `change`-event.
 
 
-
 ## License
-GPLv2 © [Konfirm](https://konfirm.eu)
+GPLv2 © [Konfirm ![Open](https://kon.fm/open.svg)](//kon.fm/site)
