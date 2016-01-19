@@ -5,7 +5,7 @@ var Code = require('code'),
 	submerge = require('../lib/submerge'),
 	lab = exports.lab = Lab.script();
 
-lab.experiment('Locked behaviour', function() {
+lab.experiment('Live behaviour', function() {
 
 	lab.test('All expected properties', function(done) {
 		var first = {
@@ -94,5 +94,4 @@ lab.experiment('Locked behaviour', function() {
 
 		done();
 	});
-
 });

@@ -52,15 +52,15 @@ lab.experiment('Events', function() {
 	lab.test('Changes to a live submerge trigger events', function(done) {
 		var result = {all:0, remove: 0, once:0};
 
-		function all(key, newValue, oldValue) {
+		function all() {
 			++result.all;
 		}
 
-		function remove(key, newValue, oldValue) {
+		function remove() {
 			++result.remove;
 		}
 
-		function once(key, newValue, oldValue) {
+		function once() {
 			++result.once;
 		}
 
@@ -107,7 +107,7 @@ lab.experiment('Events', function() {
 		Code.expect(live.a.b.c.d.e).to.equal(true);
 		Code.expect(live.a.b.c.d.f).to.equal(false);
 
-		live.on('change', function(key, newValue, oldValue) {
+		live.on('change', function(key, newValue) {
 			result.push({key: key, value: newValue});
 		});
 
