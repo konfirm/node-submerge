@@ -13,6 +13,11 @@ Recursively merge various objects into a single new object, optionally capable o
 npm install --save submerge
 ```
 
+As of version 1.1.0 `Submerge` (mostly its dependencies) requires NodeJS 4 or higher. If you are 'stuck' on NodeJS 0.10 - 0.12, you will need to specify the version (the latest is 1.0.9).
+```
+$ npm install --save submerge@^1.0.9
+```
+
 ### Usage
 There are three ways of creating merged objects, all of which are based on the 'first come, first serve'-principle, the first key encountered will be on the merged object.
 There is one exception, nested object, if a key holds an object and it can inherit one or more properties from another object, it will.
