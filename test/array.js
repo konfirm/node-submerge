@@ -19,9 +19,9 @@ lab.experiment('Array behaviour', function() {
 			},
 			merge = submerge(first, second);
 
-		Code.expect(merge.a).to.deep.equal([1, 2, 3]);
-		Code.expect(merge.b).to.deep.equal([4, 5, 6]);
-		Code.expect(merge.c).to.deep.equal([7, 8, 9]);
+		Code.expect(merge.a).to.equal([1, 2, 3]);
+		Code.expect(merge.b).to.equal([4, 5, 6]);
+		Code.expect(merge.c).to.equal([7, 8, 9]);
 
 		done();
 	});
@@ -36,7 +36,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([4, 5, 3, 4, 5]);
+				Code.expect(value).to.equal([4, 5, 3, 4, 5]);
 
 				done();
 			});
@@ -53,7 +53,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([1, 3, 3, 3, 3]);
+				Code.expect(value).to.equal([1, 3, 3, 3, 3]);
 
 				done();
 			});
@@ -70,7 +70,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([1, 2, 3, 4]);
+				Code.expect(value).to.equal([1, 2, 3, 4]);
 
 				done();
 			});
@@ -87,7 +87,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([1, 2, 3, 7]);
+				Code.expect(value).to.equal([1, 2, 3, 7]);
 
 				done();
 			});
@@ -104,7 +104,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([3, 2, 1]);
+				Code.expect(value).to.equal([3, 2, 1]);
 
 				done();
 			});
@@ -121,7 +121,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([2, 3]);
+				Code.expect(value).to.equal([2, 3]);
 
 				done();
 			});
@@ -138,7 +138,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([1, 3, 5, 2, 4]);
+				Code.expect(value).to.equal([1, 3, 5, 2, 4]);
 
 				done();
 			});
@@ -160,7 +160,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([1, 7, 8, 5]);
+				Code.expect(value).to.equal([1, 7, 8, 5]);
 
 				done();
 			});
@@ -177,7 +177,7 @@ lab.experiment('Array behaviour', function() {
 			live.on('change', function(key, value) {
 				Code.expect(key).to.equal('a');
 				Code.expect(value).to.equal(live[key]);
-				Code.expect(value).to.deep.equal([7, 1, 2, 3, 4, 5]);
+				Code.expect(value).to.equal([7, 1, 2, 3, 4, 5]);
 
 				done();
 			});
