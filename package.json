@@ -7,8 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "posttest": "./node_modules/.bin/nsp check",
-    "test": "./node_modules/.bin/lab -f -t 100 -m 3000",
+    "test": "./node_modules/.bin/lab -f -t 100 -m 3000 --leaks",
     "test-coverage": "./node_modules/.bin/lab -f -r html -m 3000 -o report.html"
   },
   "repository": {
